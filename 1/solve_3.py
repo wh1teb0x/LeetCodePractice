@@ -8,5 +8,5 @@ class Solution:
             sub_target = target - val
             if sub_target in nums_map and idx != nums_map[sub_target]:
                 return [idx, nums_map[sub_target]]
-            
+
         return []

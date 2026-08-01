@@ -9,5 +9,5 @@ class Solution:
             sub_idx = nums_map.get(sub_target)
             if not sub_idx and idx != sub_idx:
                 return [idx, nums_map[sub_target]]
-            
+
         return []
