@@ -4,8 +4,11 @@ class ListNode:
         self.val = val
         self.next = next
 
+
 class Solution:
-    def addTwoNumbers(self, l1: ListNode | None, l2: ListNode | None) -> ListNode | None:
+    def addTwoNumbers(
+        self, l1: ListNode | None, l2: ListNode | None
+    ) -> ListNode | None:
         dummy = node = ListNode()
         carry = 0
 

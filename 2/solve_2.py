@@ -4,8 +4,11 @@ class ListNode:
         self.val = val
         self.next = next
 
+
 class Solution:
-    def addTwoNumbers(self, l1: ListNode | None, l2: ListNode | None) -> ListNode | None:
+    def addTwoNumbers(
+        self, l1: ListNode | None, l2: ListNode | None
+    ) -> ListNode | None:
         dummy_node = current_node = ListNode()
         carry = 0
 
@@ -16,7 +19,7 @@ class Solution:
             sum_val = l1_val + l2_val + carry
             carry, rem = divmod(sum_val, 10)
 
-            node = ListNode(val = rem)
+            node = ListNode(val=rem)
             current_node.next = node
             current_node = current_node.next
 
